@@ -10,6 +10,14 @@
 		2E86297026F9198700E59C48 /* LookForBussiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E86296626F9198700E59C48 /* LookForBussiness.framework */; };
 		2E86297526F9198700E59C48 /* LookForBussinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86297426F9198700E59C48 /* LookForBussinessTests.swift */; };
 		2E86297726F9198700E59C48 /* LookForBussiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E86296926F9198700E59C48 /* LookForBussiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E8629BE26F9264100E59C48 /* HttpRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629BD26F9264100E59C48 /* HttpRequestable.swift */; };
+		2E8629C126F926D300E59C48 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C026F926D300E59C48 /* CoreError.swift */; };
+		2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */; };
+		2E8629C626F927C900E59C48 /* GetBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C526F927C900E59C48 /* GetBusiness.swift */; };
+		2E8629CA26F927F800E59C48 /* GetBusinessEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */; };
+		2E8629CD26F9283500E59C48 /* GetBusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */; };
+		2E8629CF26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */; };
+		2E8629D126F9287E00E59C48 /* ReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		2E86296F26F9198700E59C48 /* LookForBussinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookForBussinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86297426F9198700E59C48 /* LookForBussinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookForBussinessTests.swift; sourceTree = "<group>"; };
 		2E86297626F9198700E59C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8629BD26F9264100E59C48 /* HttpRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestable.swift; sourceTree = "<group>"; };
+		2E8629C026F926D300E59C48 /* CoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
+		2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPClient.swift; sourceTree = "<group>"; };
+		2E8629C526F927C900E59C48 /* GetBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusiness.swift; sourceTree = "<group>"; };
+		2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessEndPoint.swift; sourceTree = "<group>"; };
+		2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessDetail.swift; sourceTree = "<group>"; };
+		2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessDetailEndpoint.swift; sourceTree = "<group>"; };
+		2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,10 @@
 		2E86295C26F9198700E59C48 = {
 			isa = PBXGroup;
 			children = (
+				2E8629CB26F9281B00E59C48 /* Configuration */,
+				2E8629C426F9275D00E59C48 /* UseCases */,
+				2E8629BF26F926B500E59C48 /* ErrorManagement */,
+				2E8629BC26F9257A00E59C48 /* GenericApiClient */,
 				2E86296826F9198700E59C48 /* LookForBussiness */,
 				2E86297326F9198700E59C48 /* LookForBussinessTests */,
 				2E86296726F9198700E59C48 /* Products */,
@@ -84,6 +104,58 @@
 				2E86297626F9198700E59C48 /* Info.plist */,
 			);
 			path = LookForBussinessTests;
+			sourceTree = "<group>";
+		};
+		2E8629BC26F9257A00E59C48 /* GenericApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629BD26F9264100E59C48 /* HttpRequestable.swift */,
+				2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */,
+			);
+			path = GenericApiClient;
+			sourceTree = "<group>";
+		};
+		2E8629BF26F926B500E59C48 /* ErrorManagement */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629C026F926D300E59C48 /* CoreError.swift */,
+			);
+			path = ErrorManagement;
+			sourceTree = "<group>";
+		};
+		2E8629C426F9275D00E59C48 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629C826F927DD00E59C48 /* GetBusinessDetail */,
+				2E8629C726F927D200E59C48 /* GetBusiness */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2E8629C726F927D200E59C48 /* GetBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629C526F927C900E59C48 /* GetBusiness.swift */,
+				2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */,
+			);
+			path = GetBusiness;
+			sourceTree = "<group>";
+		};
+		2E8629C826F927DD00E59C48 /* GetBusinessDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */,
+				2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */,
+			);
+			path = GetBusinessDetail;
+			sourceTree = "<group>";
+		};
+		2E8629CB26F9281B00E59C48 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +219,7 @@
 				TargetAttributes = {
 					2E86296526F9198700E59C48 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					2E86296E26F9198700E59C48 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -177,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8629D126F9287E00E59C48 /* ReleaseConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8629C626F927C900E59C48 /* GetBusiness.swift in Sources */,
+				2E8629BE26F9264100E59C48 /* HttpRequestable.swift in Sources */,
+				2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */,
+				2E8629CD26F9283500E59C48 /* GetBusinessDetail.swift in Sources */,
+				2E8629C126F926D300E59C48 /* CoreError.swift in Sources */,
+				2E8629CF26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift in Sources */,
+				2E8629CA26F927F800E59C48 /* GetBusinessEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +421,7 @@
 		2E86297B26F9198700E59C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = carlos.LookForBussiness;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +447,7 @@
 		2E86297C26F9198700E59C48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +472,7 @@
 		2E86297E26F9198700E59C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R7J3GQ72T5;
@@ -406,6 +491,7 @@
 		2E86297F26F9198700E59C48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R7J3GQ72T5;
