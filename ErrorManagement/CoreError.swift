@@ -15,7 +15,8 @@ public protocol GenericError: Error {
 public struct CoreError: GenericError, Equatable {
     
     public enum UseCaseError: Error, Equatable {
-        
+        case getBusinesses(ApiError)
+        case getBusinessDetail(ApiError)
     }
     
     public enum ApiError: Error, Equatable {
@@ -34,6 +35,10 @@ public struct CoreError: GenericError, Equatable {
         case methodNotAllowed = 405
         case notAcceptable = 406
         case unknown
+    }
+    
+    public enum ConfigurationError: Error, Equatable {
+        case missingKey, invalidValue
     }
     
     // To be defined

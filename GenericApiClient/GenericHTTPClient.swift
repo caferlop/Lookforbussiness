@@ -15,7 +15,7 @@ public protocol HTTPClient {
     func sendRequest(request: HTTPRequestable, completion: @escaping(Result) -> Void) -> HTTPClientTask?
 }
 
-public class GenericHTTPClient: NSObject {
+public final class GenericHTTPClient: NSObject {
     private var session: URLSession?
     public init(session: URLSession?) {
         self.session = session

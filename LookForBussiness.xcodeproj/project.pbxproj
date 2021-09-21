@@ -14,10 +14,15 @@
 		2E8629C126F926D300E59C48 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C026F926D300E59C48 /* CoreError.swift */; };
 		2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */; };
 		2E8629C626F927C900E59C48 /* GetBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C526F927C900E59C48 /* GetBusiness.swift */; };
-		2E8629CA26F927F800E59C48 /* GetBusinessEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */; };
+		2E8629CA26F927F800E59C48 /* GetBusinessesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C926F927F800E59C48 /* GetBusinessesEndPoint.swift */; };
 		2E8629CD26F9283500E59C48 /* GetBusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */; };
 		2E8629CF26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */; };
 		2E8629D126F9287E00E59C48 /* ReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */; };
+		2E8629D326F9297100E59C48 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D226F9297100E59C48 /* Configuration.swift */; };
+		2E8629D526F92BA000E59C48 /* BusinessDetailDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D426F92BA000E59C48 /* BusinessDetailDTOs.swift */; };
+		2E8629D726F92CCE00E59C48 /* BusinessDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D626F92CCE00E59C48 /* BusinessDTOs.swift */; };
+		2E8629D926F92F1D00E59C48 /* BusinessDetailParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */; };
+		2E8629DB26F9312100E59C48 /* BusinessesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629DA26F9312100E59C48 /* BusinessesParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +46,15 @@
 		2E8629C026F926D300E59C48 /* CoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
 		2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPClient.swift; sourceTree = "<group>"; };
 		2E8629C526F927C900E59C48 /* GetBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusiness.swift; sourceTree = "<group>"; };
-		2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessEndPoint.swift; sourceTree = "<group>"; };
+		2E8629C926F927F800E59C48 /* GetBusinessesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessesEndPoint.swift; sourceTree = "<group>"; };
 		2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessDetail.swift; sourceTree = "<group>"; };
 		2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessDetailEndpoint.swift; sourceTree = "<group>"; };
 		2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		2E8629D226F9297100E59C48 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2E8629D426F92BA000E59C48 /* BusinessDetailDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailDTOs.swift; sourceTree = "<group>"; };
+		2E8629D626F92CCE00E59C48 /* BusinessDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDTOs.swift; sourceTree = "<group>"; };
+		2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailParser.swift; sourceTree = "<group>"; };
+		2E8629DA26F9312100E59C48 /* BusinessesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				2E8629C526F927C900E59C48 /* GetBusiness.swift */,
-				2E8629C926F927F800E59C48 /* GetBusinessEndPoint.swift */,
+				2E8629C926F927F800E59C48 /* GetBusinessesEndPoint.swift */,
+				2E8629D626F92CCE00E59C48 /* BusinessDTOs.swift */,
+				2E8629DA26F9312100E59C48 /* BusinessesParser.swift */,
 			);
 			path = GetBusiness;
 			sourceTree = "<group>";
@@ -146,6 +158,8 @@
 			children = (
 				2E8629CC26F9283500E59C48 /* GetBusinessDetail.swift */,
 				2E8629CE26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift */,
+				2E8629D426F92BA000E59C48 /* BusinessDetailDTOs.swift */,
+				2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */,
 			);
 			path = GetBusinessDetail;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */,
+				2E8629D226F9297100E59C48 /* Configuration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -271,10 +286,15 @@
 				2E8629C626F927C900E59C48 /* GetBusiness.swift in Sources */,
 				2E8629BE26F9264100E59C48 /* HttpRequestable.swift in Sources */,
 				2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */,
+				2E8629D526F92BA000E59C48 /* BusinessDetailDTOs.swift in Sources */,
 				2E8629CD26F9283500E59C48 /* GetBusinessDetail.swift in Sources */,
 				2E8629C126F926D300E59C48 /* CoreError.swift in Sources */,
+				2E8629DB26F9312100E59C48 /* BusinessesParser.swift in Sources */,
 				2E8629CF26F9285C00E59C48 /* GetBusinessDetailEndpoint.swift in Sources */,
-				2E8629CA26F927F800E59C48 /* GetBusinessEndPoint.swift in Sources */,
+				2E8629D926F92F1D00E59C48 /* BusinessDetailParser.swift in Sources */,
+				2E8629D726F92CCE00E59C48 /* BusinessDTOs.swift in Sources */,
+				2E8629D326F9297100E59C48 /* Configuration.swift in Sources */,
+				2E8629CA26F927F800E59C48 /* GetBusinessesEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
