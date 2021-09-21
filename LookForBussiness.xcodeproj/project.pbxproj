@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E86297026F9198700E59C48 /* LookForBussiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E86296626F9198700E59C48 /* LookForBussiness.framework */; };
 		2E86297526F9198700E59C48 /* LookForBussinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86297426F9198700E59C48 /* LookForBussinessTests.swift */; };
-		2E86297726F9198700E59C48 /* LookForBussiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E86296926F9198700E59C48 /* LookForBussiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E8629BE26F9264100E59C48 /* HttpRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629BD26F9264100E59C48 /* HttpRequestable.swift */; };
 		2E8629C126F926D300E59C48 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C026F926D300E59C48 /* CoreError.swift */; };
 		2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		2E86296626F9198700E59C48 /* LookForBussiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LookForBussiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E86296926F9198700E59C48 /* LookForBussiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookForBussiness.h; sourceTree = "<group>"; };
 		2E86296A26F9198700E59C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E86296F26F9198700E59C48 /* LookForBussinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookForBussinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86297426F9198700E59C48 /* LookForBussinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookForBussinessTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		2E86296826F9198700E59C48 /* LookForBussiness */ = {
 			isa = PBXGroup;
 			children = (
-				2E86296926F9198700E59C48 /* LookForBussiness.h */,
 				2E86296A26F9198700E59C48 /* Info.plist */,
 			);
 			path = LookForBussiness;
@@ -180,7 +177,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E86297726F9198700E59C48 /* LookForBussiness.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +447,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LookForBussiness/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -459,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = carlos.LookForBussiness;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -477,6 +475,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LookForBussiness/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -485,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = carlos.LookForBussiness;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
