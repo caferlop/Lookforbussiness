@@ -21,13 +21,13 @@ public enum GetBusinessDetailEndPoint: HTTPRequestable {
         
         switch self {
         case .getBusinessDetailById(let id):
-            relativePath = "/businesses/search/\(id)"
+            relativePath = "businesses/\(id)"
         }
         
         return URL(string: relativePath, relativeTo: base)
     }
     
-    
+    // API KEY SHOULD BE OFFUSCATED
     public var headers: [String : String] {
         return ["Authorization": "Bearer I2KQ9R9SB2sCbL_bJDbIfY9kt-yZ4tb5WaY0_0qfRGm6TUcJ_KIVZb-J0D55idgomYvLe_xfYsoNkclIzWbnhLJn8oIKDI8dQ2uc1_RaVU1MjBWYvVrzRkO7QGZEYXYx"]
     }

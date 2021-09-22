@@ -9,8 +9,9 @@ import Foundation
 
 public enum GetBusinessesEndPoint: HTTPRequestable {
         
-    case getBusinessByTerm(term: String)
-    case getBussinessByTerm(term: String, latitude: Float, longitude: Float)
+    case getBussinessByLocation(latitude: Double, longitude: Double)
+    case getBusinessByTermAndLocation(term: String, latitude: Double, longitude: Double)
+    case getBusinessByTermLocationAndRadius(term: String, latitude: Double, longitude: Double, radius: Int)
     
     // Force unwrapped the url composition, is preferable to get an error compiling than a run time crash
     private var baseURL: URL? {
@@ -22,8 +23,8 @@ public enum GetBusinessesEndPoint: HTTPRequestable {
         var relativePath: String
         
         switch self {
-        case .getBusinessByTerm(_), .getBussinessByTerm(_, _, _):
-            relativePath = "/businesses/search" + (self.query ?? "")
+        case .getBussinessByLocation(_, _), .getBusinessByTermAndLocation(_, _, _), .getBusinessByTermLocationAndRadius(_, _, _, _):
+            relativePath = "businesses/search" + (self.query ?? "")
         }
         
         return URL(string: relativePath, relativeTo: base)
@@ -31,15 +32,20 @@ public enum GetBusinessesEndPoint: HTTPRequestable {
     
     public var query: String? {
         switch self {
-        case .getBusinessByTerm(let term):
-            return "?term=\(term)"
-        case .getBussinessByTerm(let term, let latitude, let longitude):
+        case .getBussinessByLocation(let latitude, let longitude):
+            return "?latitude=\(latitude)&longitude=\(longitude)"
+        case .getBusinessByTermAndLocation(let term, let latitude, let longitude):
             return "?term=\(term)&latitude=\(latitude)&longitude=\(longitude)"
+        case .getBusinessByTermLocationAndRadius(let term, let latitude, let longitude, let radius):
+            return "?term=\(term)&latitude=\(latitude)&longitude=\(longitude)&radius=\(radius)"
         }
     }
     
+    // API KEY SHOULD BE OFFUSCATED
     public var headers: [String : String] {
-        return ["Authorization": "Bearer I2KQ9R9SB2sCbL_bJDbIfY9kt-yZ4tb5WaY0_0qfRGm6TUcJ_KIVZb-J0D55idgomYvLe_xfYsoNkclIzWbnhLJn8oIKDI8dQ2uc1_RaVU1MjBWYvVrzRkO7QGZEYXYx"]
+        return ["Authorization": "Bearer I2KQ9R9SB2sCbL_bJDbIfY9kt-yZ4tb5WaY0_0qfRGm6TUcJ_KIVZb-J0D55idgomYvLe_xfYsoNkclIzWbnhLJn8oIKDI8dQ2uc1_RaVU1MjBWYvVrzRkO7QGZEYXYx",
+                "Accept":"application/json",
+                "Content-Type": "application/json"]
     }
 }
 

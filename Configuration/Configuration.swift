@@ -10,7 +10,7 @@ import Foundation
 public enum Configuration {
     
     public static func value<T>(for key: String) throws -> T where T: LosslessStringConvertible {
-        guard let object = Bundle.main.object(forInfoDictionaryKey:key) else {
+        guard let bundle = Bundle(identifier: "carlos.LookForBussiness"), let object = bundle.object(forInfoDictionaryKey: key) else {
             throw CoreError.ConfigurationError.missingKey
         }
 

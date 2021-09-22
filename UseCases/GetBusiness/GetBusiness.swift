@@ -29,6 +29,7 @@ public final class GetBusinesses: BusinessSearchable {
                     let business = try BusinessesParser.parseBusinesses(data: data, from: httpResponse)
                     completion(.success(business))
                 } catch let error{
+                    print("Error:", error)
                     completion(.failure(error))
                 }
             case .failure(let error):

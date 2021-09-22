@@ -35,12 +35,13 @@ extension HTTPRequestable {
             let data = try? JSONSerialization.data(withJSONObject: requestParamenters, options: [])
             urlRequest.httpBody = data
             urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            urlRequest.setValue("application/json", forHTTPHeaderField: "Accept")
         }
         return urlRequest
     }
 
     public var headers: [String: String] {
-        return [:]
+        return ["Accept":"application/json"]
     }
 
     public var method: HTTPMethod {

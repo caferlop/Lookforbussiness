@@ -14,6 +14,8 @@ final class BusinessesParser {
     static func parseBusinesses(data: Data, from response: HTTPURLResponse) throws -> [Business] {
         if response.statusCode == OK_200 {
             do {
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                print("json:", json)
                 let root = try JSONDecoder().decode(RootBusiness.self, from: data)
                 return root.businesses
             } catch  {

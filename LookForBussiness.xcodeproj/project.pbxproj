@@ -22,6 +22,7 @@
 		2E8629D726F92CCE00E59C48 /* BusinessDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D626F92CCE00E59C48 /* BusinessDTOs.swift */; };
 		2E8629D926F92F1D00E59C48 /* BusinessDetailParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */; };
 		2E8629DB26F9312100E59C48 /* BusinessesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629DA26F9312100E59C48 /* BusinessesParser.swift */; };
+		2ECE0F4326FBB2DB004E0553 /* DevConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2E8629D626F92CCE00E59C48 /* BusinessDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDTOs.swift; sourceTree = "<group>"; };
 		2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailParser.swift; sourceTree = "<group>"; };
 		2E8629DA26F9312100E59C48 /* BusinessesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesParser.swift; sourceTree = "<group>"; };
+		2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		2E8629CB26F9281B00E59C48 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */,
 				2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */,
 				2E8629D226F9297100E59C48 /* Configuration.swift */,
 			);
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECE0F4326FBB2DB004E0553 /* DevConfig.xcconfig in Resources */,
 				2E8629D126F9287E00E59C48 /* ReleaseConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +440,7 @@
 		};
 		2E86297B26F9198700E59C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +469,7 @@
 		};
 		2E86297C26F9198700E59C48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8629D026F9287E00E59C48 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

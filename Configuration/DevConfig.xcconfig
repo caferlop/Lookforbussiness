@@ -1,13 +1,11 @@
 //
-//  ReleaseConfig.xcconfig
+//  DevConfig.xcconfig
 //  LookForBussiness
 //
-//  Created by carlos fernandez on 20/9/21.
+//  Created by carlos fernandez on 22/9/21.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
 DOMAIN = api.yelp.com/v3/
-
-

@@ -10,7 +10,6 @@ import Foundation
 public protocol BusinessDetailable: AnyObject {
     typealias ResultBusinessDetail = Swift.Result<BusinessDetail, Error>
     func getBusinessDetail(request: HTTPRequestable, completion: @escaping (ResultBusinessDetail) -> Void)
-    
 }
 
 public final class GetBusinessDetail: BusinessDetailable {

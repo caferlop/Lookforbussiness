@@ -7,46 +7,34 @@
 
 import Foundation
 
-// MARK: - Welcome
+import Foundation
+
+// MARK: - RootBusiness
 public struct RootBusiness: Codable {
-    let total: Int
-    let businesses: [Business]
-    let region: Region
+    public let businesses: [Business]
+    public let total: Int
+    public let region: Region
 }
 
 // MARK: - Business
 public struct Business: Codable {
-    let rating: Int
-    let price, phone, id, alias: String
-    let isClosed: Bool
-    let categories: [Category]
-    let reviewCount: Int
-    let name: String
-    let url: String
-    let coordinates: Center
-    let imageURL: String
-    let location: Location
-    let distance: Double
-    let transactions: [String]
+    public let id, alias, name: String
+    public let coordinates: Center
 
     enum CodingKeys: String, CodingKey {
-        case rating, price, phone, id, alias
-        case isClosed = "is_closed"
-        case categories
-        case reviewCount = "review_count"
-        case name, url, coordinates
-        case imageURL = "image_url"
-        case location, distance, transactions
+        case id, alias, name
+        case coordinates//, location
     }
 }
 
+
 // MARK: - Center
 public struct Center: Codable {
-    let latitude, longitude: Double
+    public let latitude, longitude: Double
 }
 
 // MARK: - Region
 public struct Region: Codable {
-    let center: Center
+    public let center: Center
 }
 
