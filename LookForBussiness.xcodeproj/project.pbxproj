@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E86297026F9198700E59C48 /* LookForBussiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E86296626F9198700E59C48 /* LookForBussiness.framework */; };
-		2E86297526F9198700E59C48 /* LookForBussinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86297426F9198700E59C48 /* LookForBussinessTests.swift */; };
 		2E8629BE26F9264100E59C48 /* HttpRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629BD26F9264100E59C48 /* HttpRequestable.swift */; };
 		2E8629C126F926D300E59C48 /* CoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C026F926D300E59C48 /* CoreError.swift */; };
 		2E8629C326F9272600E59C48 /* GenericHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629C226F9272600E59C48 /* GenericHTTPClient.swift */; };
@@ -23,6 +22,10 @@
 		2E8629D926F92F1D00E59C48 /* BusinessDetailParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */; };
 		2E8629DB26F9312100E59C48 /* BusinessesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8629DA26F9312100E59C48 /* BusinessesParser.swift */; };
 		2ECE0F4326FBB2DB004E0553 /* DevConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */; };
+		2ECE0F4D26FBF5B2004E0553 /* HttpClientServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0F4C26FBF5B2004E0553 /* HttpClientServiceSpy.swift */; };
+		2ECE0F4F26FBF64C004E0553 /* XCTestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0F4E26FBF64C004E0553 /* XCTestExtensions.swift */; };
+		2ECE0F5226FBF6DE004E0553 /* GetBusinessesEndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0F5126FBF6DE004E0553 /* GetBusinessesEndPointTests.swift */; };
+		2ECE0F5526FBF9C8004E0553 /* GetBusinessUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0F5426FBF9C8004E0553 /* GetBusinessUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		2E86296626F9198700E59C48 /* LookForBussiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LookForBussiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86296A26F9198700E59C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E86296F26F9198700E59C48 /* LookForBussinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LookForBussinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E86297426F9198700E59C48 /* LookForBussinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookForBussinessTests.swift; sourceTree = "<group>"; };
 		2E86297626F9198700E59C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8629BD26F9264100E59C48 /* HttpRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestable.swift; sourceTree = "<group>"; };
 		2E8629C026F926D300E59C48 /* CoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreError.swift; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		2E8629D826F92F1D00E59C48 /* BusinessDetailParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailParser.swift; sourceTree = "<group>"; };
 		2E8629DA26F9312100E59C48 /* BusinessesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessesParser.swift; sourceTree = "<group>"; };
 		2ECE0F4226FBB2DB004E0553 /* DevConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevConfig.xcconfig; sourceTree = "<group>"; };
+		2ECE0F4C26FBF5B2004E0553 /* HttpClientServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientServiceSpy.swift; sourceTree = "<group>"; };
+		2ECE0F4E26FBF64C004E0553 /* XCTestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestExtensions.swift; sourceTree = "<group>"; };
+		2ECE0F5126FBF6DE004E0553 /* GetBusinessesEndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessesEndPointTests.swift; sourceTree = "<group>"; };
+		2ECE0F5426FBF9C8004E0553 /* GetBusinessUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBusinessUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +115,9 @@
 		2E86297326F9198700E59C48 /* LookForBussinessTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E86297426F9198700E59C48 /* LookForBussinessTests.swift */,
+				2ECE0F5326FBF95C004E0553 /* GetBusinessesUseCase */,
+				2ECE0F5026FBF6A3004E0553 /* EndpointTests */,
+				2ECE0F4B26FBF505004E0553 /* Helpers */,
 				2E86297626F9198700E59C48 /* Info.plist */,
 			);
 			path = LookForBussinessTests;
@@ -171,6 +179,31 @@
 				2E8629D226F9297100E59C48 /* Configuration.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2ECE0F4B26FBF505004E0553 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE0F4C26FBF5B2004E0553 /* HttpClientServiceSpy.swift */,
+				2ECE0F4E26FBF64C004E0553 /* XCTestExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2ECE0F5026FBF6A3004E0553 /* EndpointTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE0F5126FBF6DE004E0553 /* GetBusinessesEndPointTests.swift */,
+			);
+			path = EndpointTests;
+			sourceTree = "<group>";
+		};
+		2ECE0F5326FBF95C004E0553 /* GetBusinessesUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE0F5426FBF9C8004E0553 /* GetBusinessUseCase.swift */,
+			);
+			path = GetBusinessesUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +335,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E86297526F9198700E59C48 /* LookForBussinessTests.swift in Sources */,
+				2ECE0F5526FBF9C8004E0553 /* GetBusinessUseCase.swift in Sources */,
+				2ECE0F4F26FBF64C004E0553 /* XCTestExtensions.swift in Sources */,
+				2ECE0F5226FBF6DE004E0553 /* GetBusinessesEndPointTests.swift in Sources */,
+				2ECE0F4D26FBF5B2004E0553 /* HttpClientServiceSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

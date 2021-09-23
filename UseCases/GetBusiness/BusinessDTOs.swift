@@ -12,12 +12,12 @@ import Foundation
 // MARK: - RootBusiness
 public struct RootBusiness: Codable {
     public let businesses: [Business]
-    public let total: Int
-    public let region: Region
+    public let total: Int?
+    public let region: Region?
 }
 
 // MARK: - Business
-public struct Business: Codable {
+public struct Business: Codable, Equatable {
     public let id, alias, name: String
     public let coordinates: Center
 
@@ -29,7 +29,7 @@ public struct Business: Codable {
 
 
 // MARK: - Center
-public struct Center: Codable {
+public struct Center: Codable, Equatable {
     public let latitude, longitude: Double
 }
 
